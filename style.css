@@ -5,7 +5,7 @@
 }
 
 article {
-  background: #fff;
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -28,6 +28,52 @@ nav a {
   line-height: normal;
   text-decoration: none;
   margin-left: 78px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: auto;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+.about-us,
+.contact-us {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.skip,
+.dropdown li a {
+  display: none;
 }
 
 section {
@@ -60,13 +106,100 @@ section {
   line-height: normal;
 }
 
-.image {
-  width: 80%;
-}
-
 .image img {
   width: 600px;
   height: 446px;
   flex-shrink: 0;
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+
+@media (max-width: 1300px) {
+  .dropdown li a {
+    font-size: 14px;
+  }
+  .skip,
+.dropdown li a {
+    display: block;
+  }
+  .about-us,
+.contact-us {
+    display: none;
+  }
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 140px;
+    gap: 15em;
+    padding-top: 0;
+  }
+  .tittle-container__svg {
+    width: 400px;
+  }
+  .tittle-container__text {
+    width: 300px;
+  }
+  .image img {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    gap: 9em;
+  }
+  .tittle-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .tittle-container__svg {
+    width: 250px;
+  }
+  .tittle-container__text {
+    width: 250px;
+  }
+  .image img {
+    width: 360px;
+    height: 300px;
+  }
+}
+@media (max-width: 608px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+    gap: 1em;
+  }
+  .tittle-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image img {
+    width: 300px;
+  }
+  nav img {
+    width: 100px;
+  }
+}
+@media (max-width: 440px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 0em;
+  }
+  .tittle-container__svg {
+    width: 200px;
+  }
+  .tittle-container__text {
+    width: 200px;
+  }
+  .image img {
+    width: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
