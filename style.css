@@ -310,8 +310,14 @@ section {
   }
 }
 .main__head {
-  padding-left: 425px;
-  padding-top: 72px;
+  text-align: center;
+  color: #000;
+  font-family: Joystix;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 121px;
 }
 
 .game-boy {
@@ -385,10 +391,6 @@ section {
   gap: 16px;
 }
 
-.about-book .text {
-  width: 200px;
-}
-
 aside {
   display: flex;
   flex-direction: column;
@@ -399,4 +401,83 @@ aside img {
   height: 170px;
   flex-shrink: 0;
   background: url(<path-to-image>), lightgray -13.5px 0px/110.545% 100% no-repeat;
+}
+
+@media (max-width: 1300px) {
+  aside {
+    padding-top: 60px;
+  }
+  aside img {
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), lightgray -13.5px 0px/110.545% 100% no-repeat;
+  }
+  .header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4em;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .game-boy {
+    width: 463px;
+    height: 463px;
+    flex-shrink: 0;
+  }
+  .about-book {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8em;
+  }
+}
+@media (max-width: 590px) {
+  aside img {
+    width: 150px;
+    height: 100px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), lightgray -13.5px 0px/110.545% 100% no-repeat;
+  }
+  .main__head {
+    font-size: 15px;
+  }
+  .header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 0.3em;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  .about-book {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .game-boy {
+    width: 270px;
+    height: 270px;
+  }
+  .header__text {
+    font-size: 10px;
+    width: 60px;
+    text-align: center;
+  }
+  .header__click {
+    font-size: 10px;
+  }
+  .header__learn {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
