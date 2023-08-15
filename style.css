@@ -5,7 +5,7 @@
 }
 
 article {
-  background-color: #fff;
+  background-color: #666;
   height: 100vh;
 }
 
@@ -1291,7 +1291,7 @@ form button {
     gap: 100px;
     padding-left: 180px;
     padding-right: 169px;
-    padding-top: 100px;
+    padding-top: 10px;
   }
   .add-information {
     display: flex;
@@ -1354,7 +1354,7 @@ form button {
     gap: 30px;
     padding-left: 180px;
     padding-right: 169px;
-    padding-top: 40px;
+    padding-top: 10px;
   }
   .add-information {
     display: flex;
@@ -1431,6 +1431,7 @@ form button {
   }
   .add-information__h3 {
     font-size: 9px;
+    padding-top: 8px;
   }
   .add-information__p {
     font-size: 9px;
@@ -1448,5 +1449,19 @@ form button {
     display: flex;
     gap: 7px;
     flex-direction: column;
+  }
+}
+@media (max-width: 312px) {
+  .add-information {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .add-information__h3 {
+    font-size: 9px;
+    padding-top: 4px;
+  }
+  .svg-right svg {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
