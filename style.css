@@ -892,11 +892,6 @@ footer {
   margin-top: 10px;
 }
 
-article {
-  height: 100vh;
-  background-color: #fff;
-}
-
 @media (max-width: 1200px) {
   .us-container {
     display: flex;
@@ -1153,4 +1148,137 @@ article {
     font-size: 15px;
     padding-top: 300px;
   }
+}
+.contact-information {
+  display: flex;
+  gap: 216px;
+  padding-left: 140px;
+  padding-right: 129px;
+  padding-top: 50px;
+}
+
+.add-information {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.add-information__h3 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.add-information__p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 483px;
+  padding-top: 24px;
+}
+.add-information__b {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.add-information__span {
+  color: #484848;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.head-line {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.svg-right {
+  display: flex;
+  align-items: center;
+}
+
+.first {
+  margin-left: 12px;
+}
+
+.second {
+  margin-left: 30px;
+}
+
+.third {
+  margin-left: 55px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+form label {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form input {
+  width: 380px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid #b5b6ba;
+}
+
+.small-input {
+  width: 150px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.big-input {
+  width: 198px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.flex-input {
+  display: flex;
+}
+
+form button {
+  border-radius: 5px;
+  background: #2686b0;
+  width: 380px;
+  height: 40px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
