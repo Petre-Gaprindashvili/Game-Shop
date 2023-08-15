@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 article {
-  background-color: #666;
+  background-color: #fff;
   height: 100vh;
 }
 nav {
@@ -1348,26 +1348,61 @@ form button {
     align-items: center;
     gap: 10px;
     flex-direction: column;
-    &__span {
-      text-align: center;
-      width: 400px;
+    &__h3 {
+      font-size: 9px;
+      padding-top: 8px;
     }
     &__p {
-      text-align: center;
-      padding-top: 10px;
-      width: 400px;
+      font-size: 9px;
+      width: 350px;
+      padding-top: 5px;
+    }
+    &__span {
+      font-size: 9px;
+      width: 350px;
+    }
+    &__b {
+      font-size: 10px;
     }
   }
   .head-line {
     display: flex;
+    gap: 7px;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
   form label {
     font-size: 14px;
   }
   form p {
     font-size: 14px;
+  }
+  .small-input {
+    width: 150px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .big-input {
+    width: 150px;
+    height: 20px;
+  }
+  form input {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    width: 150px;
+    height: 20px;
+    padding-top: 7px;
+  }
+  form textarea {
+    width: 150px;
+    height: 30px;
+  }
+  form button {
+    width: 150px;
+  }
+  form label {
+    font-size: 9px;
   }
 }
 @media (max-width: 512px) {
@@ -1416,6 +1451,7 @@ form button {
     display: flex;
     gap: 10px;
     flex-direction: column;
+
     &__h3 {
       font-size: 9px;
       padding-top: 8px;
@@ -1433,6 +1469,7 @@ form button {
       font-size: 10px;
     }
   }
+
   .head-line {
     display: flex;
     gap: 7px;
@@ -1446,10 +1483,13 @@ form button {
     flex-direction: column;
     &__h3 {
       font-size: 9px;
-      padding-top: 4px;
+      padding-top: 0px;
     }
   }
   .svg-right svg {
     display: none;
+  }
+  form button {
+    font-size: 9px;
   }
 }

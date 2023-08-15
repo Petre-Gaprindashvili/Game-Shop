@@ -5,7 +5,7 @@
 }
 
 article {
-  background-color: #666;
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -1362,25 +1362,60 @@ form button {
     gap: 10px;
     flex-direction: column;
   }
-  .add-information__span {
-    text-align: center;
-    width: 400px;
+  .add-information__h3 {
+    font-size: 9px;
+    padding-top: 8px;
   }
   .add-information__p {
-    text-align: center;
-    padding-top: 10px;
-    width: 400px;
+    font-size: 9px;
+    width: 350px;
+    padding-top: 5px;
+  }
+  .add-information__span {
+    font-size: 9px;
+    width: 350px;
+  }
+  .add-information__b {
+    font-size: 10px;
   }
   .head-line {
     display: flex;
+    gap: 7px;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
   form label {
     font-size: 14px;
   }
   form p {
     font-size: 14px;
+  }
+  .small-input {
+    width: 150px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .big-input {
+    width: 150px;
+    height: 20px;
+  }
+  form input {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    width: 150px;
+    height: 20px;
+    padding-top: 7px;
+  }
+  form textarea {
+    width: 150px;
+    height: 30px;
+  }
+  form button {
+    width: 150px;
+  }
+  form label {
+    font-size: 9px;
   }
 }
 @media (max-width: 512px) {
@@ -1459,9 +1494,12 @@ form button {
   }
   .add-information__h3 {
     font-size: 9px;
-    padding-top: 4px;
+    padding-top: 0px;
   }
   .svg-right svg {
     display: none;
+  }
+  form button {
+    font-size: 9px;
   }
 }/*# sourceMappingURL=style.css.map */
