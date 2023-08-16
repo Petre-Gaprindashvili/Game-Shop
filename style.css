@@ -1228,6 +1228,8 @@ form {
 }
 
 form label {
+  display: flex;
+  flex-direction: column;
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -1267,6 +1269,7 @@ form input {
 
 .flex-input {
   display: flex;
+  gap: 29px;
 }
 
 form button {

@@ -1148,6 +1148,7 @@ footer {
 }
 .contact-information {
   display: flex;
+
   gap: 216px;
   padding-left: 140px;
   padding-right: 129px;
@@ -1218,6 +1219,8 @@ form {
   padding-top: 20px;
 }
 form label {
+  display: flex;
+  flex-direction: column;
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -1253,6 +1256,7 @@ form input {
 }
 .flex-input {
   display: flex;
+  gap: 29px;
 }
 form button {
   border-radius: 5px;
