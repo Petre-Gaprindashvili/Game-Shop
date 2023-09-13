@@ -1137,13 +1137,13 @@ footer {
   }
   .offers-container__p {
     font-size: 15px;
-    padding-top: 350px;
+    padding-top: 0px;
   }
 }
 @media (max-width: 300px) {
   .offers-container__p {
     font-size: 15px;
-    padding-top: 300px;
+    padding-top: 0px;
   }
 }
 .contact-information {
@@ -1202,6 +1202,7 @@ footer {
   display: flex;
   align-items: center;
 }
+
 .first {
   margin-left: 12px;
 }
