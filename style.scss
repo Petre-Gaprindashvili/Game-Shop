@@ -71,7 +71,6 @@ ul li:hover ul.dropdown {
 
 section {
   display: flex;
-
   align-items: center;
   gap: 15em;
   height: 80%;
@@ -1137,13 +1136,11 @@ footer {
   }
   .offers-container__p {
     font-size: 15px;
-    padding-top: 0px;
   }
 }
 @media (max-width: 300px) {
   .offers-container__p {
     font-size: 15px;
-    padding-top: 0px;
   }
 }
 .contact-information {
